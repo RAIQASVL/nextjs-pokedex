@@ -27,10 +27,10 @@ export default function Home() {
         </Row>
         <div className="d-flex justify-content-cenrer gap-2 mt-4">
           {data?.previous &&
-          <Button> onClick={() => router.push({ query: { ...router.query, page: page - 1 } })}Previous page</Button>
+            <Button onClick={() => router.push({ query: { ...router.query, page: page - 1 } })}>Previous page</Button>
           }        
           {data?.next &&
-          <Button> onClick={() => router.push({ query: { ...router.query, page: page + 1 } })}Next page</Button>
+            <Button onClick={() => router.push({ query: { ...router.query, page: page + 1 } })}>Next page</Button>
           }
         </div>
       </div>
